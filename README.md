@@ -9,6 +9,10 @@ This tutorial intends to demonstrate that iphone can be used as a tool to develo
 1. Objective-C basic
 2. Swift basic
 
+## IOS
+
+IOS stands for iPhone operating system. It is a proprietary mobile operating system of Apple for its handheld. It supports Objective-C, C, C++, Swift programming language. It is based on the Macintosh OS X. After Android, it is the world’s second most popular mobile operating system. Many of Apple’s mobile devices, including the iPhone, iPad, and iPod, run on this operating system. To control the device, iOS employs a multi-touch interface, such as sliding your finger across the screen to advance to the next page or pinching your fingers to zoom in or out of the screen.
+
 <!---
 ## Welcome to GitHub Pages
 
