@@ -1,8 +1,10 @@
-## Welcome to DSP Lab IOS Demos
+# Welcome to DSP Lab IOS Demos
 
-This is the repository for Master thesis in 2022 advised by [Professor Ivan Selesnick](https://eeweb.engineering.nyu.edu/iselesni/)at NYU Tandon School of Engineering.
+This is the repository for Master thesis in 2022 advised by [Professor Ivan Selesnick](https://eeweb.engineering.nyu.edu/iselesni/) at NYU Tandon School of Engineering.
 
-This tutorial intends to demonstrate that Android phones can be used as a tool to develop cool Digital signal processing applications
+This tutorial intends to demonstrate that iphone can be used as a tool to develop cool Digital signal processing applications
+
+## Contents
 
 <!---
 ## Welcome to GitHub Pages
