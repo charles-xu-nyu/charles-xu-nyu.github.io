@@ -1,5 +1,9 @@
 ## Welcome to DSP Lab IOS Demos
 
+This is the repository for Android demos for the EL-GY 6183 Digital Signal Processing Laboratory taught by Professor Ivan Selesnick at NYU Tandon School of Engineering.
+
+This tutorial intends to demonstrate that Android phones can be used as a tool to develop cool Digital signal processing applications
+
 <!---
 ## Welcome to GitHub Pages
 
