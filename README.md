@@ -11,7 +11,11 @@ This tutorial intends to demonstrate that iphone can be used as a tool to develo
 
 ## IOS
 
-IOS stands for iPhone operating system. It is a proprietary mobile operating system of Apple for its handheld. It supports Objective-C, C, C++, Swift programming language. It is based on the Macintosh OS X. After Android, it is the world’s second most popular mobile operating system. Many of Apple’s mobile devices, including the iPhone, iPad, and iPod, run on this operating system. To control the device, iOS employs a multi-touch interface, such as sliding your finger across the screen to advance to the next page or pinching your fingers to zoom in or out of the screen.
+IOS stands for iPhone operating system. It is a proprietary mobile operating system of Apple for its handheld. It supports Objective-C, C, C++, Swift programming language. It is based on the Macintosh OS X.
+
+After Android, it is the world’s second most popular mobile operating system. Many of Apple’s mobile devices, including the iPhone, iPad, and iPod, run on this operating system. To control the device, iOS employs a multi-touch interface, such as sliding your finger across the screen to advance to the next page or pinching your fingers to zoom in or out of the screen.
+
+Swift has been official language for mobile development on Iphone since 2017. Kotlin is designed to interoperate fully with Java. Programs in Kotlin are short as opposed to Java programs. You may choose to develop apps with Kotlin or Java depending on your interest.
 
 <!---
 ## Welcome to GitHub Pages
