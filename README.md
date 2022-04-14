@@ -17,6 +17,33 @@ After Android, it is the world’s second most popular mobile operating system. 
 
 `Swift` is designed to interoperate fully with `Objective-C`. Programs in `Swift` are short as opposed to `Objective-C` programs. You may choose to develop apps with `Swift` or `Objective-C` depending on your interest.
 
+## List of IOS app demos available in the repository
+
+To try the series of demos available in the repository, you need to create a new IOS project for every demo. Follow these steps to create a new project:
+
+1. To start with, first create an Empty IOS project.
+
+2. After creating an empty project, you will see the IOS layout has a TextView which says Hello World!
+
+You must be able to see the `Swift` or `Objective-C` codes in the empty project.
+
+Now you can make changes to the default empty project by writing your own code or using the code of demo apps provided below.
+
+Following are the list of demos available in this repository. Each demo has a readme and well commented code.
+(Click on the links of each demo for README)
+
+| Demo Name              | Description                                                                                                                           |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| `Text Edit Demo`         | Simple app with text view and edit text                                                                                               |
+| `Fibonacci series app 1` | This app demonstrates how to display fixed length Fibonacci series generated on the app screen                                        |
+| `Fibonacci series app 2` | This app demonstrates how to take length of Fibonacci series as user input in app using UI and display the generated Fibonacci series |
+| `Text Image Demo`        | Simple app with text view and image view                                                                                              |
+| `Slider Demo`            | App to demonstrate use of slider                                                                                                      |
+| `Sine Wave Demo 1`       | App to demonstrate generating sine wave with fixed frequency                                                                          |
+| `Sine Wave Demo 2`       | App to demonstrate generating sine wave with variable frequency (uses buttons)                                                        |
+| `Sine Wave Demo 3`       | App to demonstrate generating sine wave with variable frequency (uses Slider)                                                         |
+| `Sine Wave Demo 4`       | App to demonstrate generating sine wave with variable frequency and gain (uses Slider)                                                |
+| `Piano`                  | A fun app. A piano simulator                                                                                                          |
 
 <!---
 ## Welcome to GitHub Pages
