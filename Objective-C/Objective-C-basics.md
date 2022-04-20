@@ -17,7 +17,9 @@ description: This section helps you with Objective-C basics, which will later be
 6. [Blocks](#blocks)
 7. [Numbers](#numbers)
 8. [Arrays](#arrays)
-9. Pointers
+9. [Pointers](#pointers)
+10. [Strings](#strings)
+11. [Structure](#structures)
 
 
 ## Introduction
@@ -681,3 +683,397 @@ When the above code is compiled and executed, it produces the result something a
 2022-04-20 15:54:52.141 pointer-1[71598:41302632] Address of var2 variable: e37bb4ae
 ```
 
+So, you understood what is memory address and how to access it, so base of the concept is over. Now let us see what is a pointer.
+
+### What Are Pointers?
+
+A **pointer** is a variable whose value is the address of another variable, i.e., direct address of the memory location. Like any variable or constant, you must declare a pointer before you can use it to store any variable address. The general form of a pointer variable declaration is −
+
+```
+type *var-name;
+```
+
+Here, **type** is the pointer's base type; it must be a valid Objective-C data type and **var-name** is the name of the pointer variable. The asterisk * you used to declare a pointer is the same asterisk that you use for multiplication. However, in this statement the asterisk is being used to designate a variable as a pointer. Following are the valid pointer declaration −
+
+```
+int    *ip;    /* pointer to an integer */
+double *dp;    /* pointer to a double */
+float  *fp;    /* pointer to a float */
+char   *ch     /* pointer to a character */
+```
+
+The actual data type of the value of all pointers, whether integer, float, character, or otherwise, is the same, a long hexadecimal number that represents a memory address. The only difference between pointers of different data types is the data type of the variable or constant that the pointer points to.
+
+### How to use Pointers?
+
+There are few important operations, which we will do with the help of pointers very frequently. **(a)** we define a pointer variable, **(b)** assign the address of a variable to a pointer, and **(c)** finally access the value at the address available in the pointer variable. This is done by using unary operator * that returns the value of the variable located at the address specified by its operand. Following example makes use of these operations −
+
+```
+#import <Foundation/Foundation.h>
+
+int main () {
+   int  var = 20;    /* actual variable declaration */
+   int  *ip;         /* pointer variable declaration */  
+   ip = &var;       /* store address of var in pointer variable*/
+
+   NSLog(@"Address of var variable: %x\n", &var  );
+
+   /* address stored in pointer variable */
+   NSLog(@"Address stored in ip variable: %x\n", ip );
+
+   /* access the value using the pointer */
+   NSLog(@"Value of *ip variable: %d\n", *ip );
+
+   return 0;
+}
+```
+
+When the above code is compiled and executed, it produces the result something as follows −
+
+```
+2022-04-20 16:08:59.178 pointer-2[71715:41314444] Address of var variable: e1ec74b8
+2022-04-20 16:08:59.178 pointer-2[71715:41314444] Address stored in ip variable: e1ec74b8
+2022-04-20 16:08:59.178 pointer-2[71715:41314444] Value of *ip variable: 20
+```
+
+## Strings
+
+The string in Objective-C programming language is represented using NSString and its subclass NSMutableString provides several ways for creating string objects. The simplest way to create a string object is to use the Objective-C @"..." construct −
+
+```
+NSString *greeting = @"Hello";
+```
+
+A simple example for creating and printing a string is shown below.
+
+```
+#import <Foundation/Foundation.h>
+
+int main () {
+   NSString *greeting = @"Hello";
+   NSLog(@"Greeting message: %@\n", greeting );
+
+   return 0;
+}
+```
+
+When the above code is compiled and executed, it produces result something as follows −
+
+```
+2022-04-20 16:17:29.892 string-1[71798:41322020] Greeting message: Hello
+```
+
+Objective-C supports a wide range of methods for manipulate strings −
+
+| **Sr.No.** |                                **Method**                                |                                                                  **Purpose**                                                                  |
+|:----------:|:------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------:|
+|      1     |                   **- (NSString *)capitalizedString;**                   |                                             Returns a capitalized representation of the receiver.                                             |
+|      2     |            **- (unichar)characterAtIndex:(NSUInteger)index;**            |                                                Returns the character at a given array position.                                               |
+|      3     |                        **- (double)doubleValue;**                        |                                      Returns the floating-point value of the receiver’s text as a double.                                     |
+|      4     |                         **- (float)floatValue;**                         |                                      Returns the floating-point value of the receiver’s text as a float.                                      |
+|      5     |                **- (BOOL)hasPrefix:(NSString *)aString;**                |                Returns a Boolean value that indicates whether a given string matches the beginning characters of the receiver.                |
+|      6     |                **- (BOOL)hasSuffix:(NSString *)aString;**                |                  Returns a Boolean value that indicates whether a given string matches the ending characters of the receiver.                 |
+|      7     |             **- (id)initWithFormat:(NSString *)format ...;**             | Returns an NSString object initialized by using a given format string as a template into which the remaining argument values are substituted. |
+|      8     |                      **- (NSInteger)integerValue;**                      |                                              Returns the NSInteger value of the receiver’s text.                                              |
+|      9     |             **- (BOOL)isEqualToString:(NSString *)aString;**             |        Returns a Boolean value that indicates whether a given string is equal to the receiver using a literal Unicode-based comparison.       |
+|     10     |                         **- (NSUInteger)length;**                        |                                           Returns the number of Unicode characters in the receiver.                                           |
+|     11     |                    **- (NSString *)lowercaseString;**                    |                                               Returns lowercased representation of the receiver.                                              |
+|     12     |             **- (NSRange)rangeOfString:(NSString *)aString;**            |                           Finds and returns the range of the first occurrence of a given string within the receiver.                          |
+|     13     |     **- (NSString *)stringByAppendingFormat:(NSString *)format ...;**    |        Returns a string made by appending to the receiver a string constructed from a given format string and the following arguments.        |
+|     14     | **- (NSString *)stringByTrimmingCharactersInSet:(NSCharacterSet *)set;** |              Returns a new string made by removing from both ends of the receiver characters contained in a given character set.              |
+|     15     |         **- (NSString *)substringFromIndex:(NSUInteger)anIndex;**        |                    Returns a new string containing the characters of the receiver from the one at a given index to the end.                   |
+
+Following example makes use of few of the above-mentioned functions −
+
+```
+#import <Foundation/Foundation.h>
+
+int main () {
+   NSString *str1 = @"Hello";
+   NSString *str2 = @"World";
+   NSString *str3;
+   int  len ;
+
+   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+
+   /* uppercase string */
+   str3 = [str2 uppercaseString];
+   NSLog(@"Uppercase String :  %@\n", str3 );
+
+   /* concatenates str1 and str2 */
+   str3 = [str1 stringByAppendingFormat:@"World"];
+   NSLog(@"Concatenated string:   %@\n", str3 );
+
+   /* total length of str3 after concatenation */
+   len = [str3 length];
+   NSLog(@"Length of Str3 :  %d\n", len );
+
+   /* InitWithFormat */
+   str3 = [[NSString alloc] initWithFormat:@"%@ %@",str1,str2];	
+   NSLog(@"Using initWithFormat:   %@\n", str3 );
+   [pool drain];
+
+   return 0;
+}
+```
+
+When the above code is compiled and executed, it produces result something as follows −
+
+```
+2022-04-20 16:33:10.511 string-2[71999:41335232] Uppercase String :  WORLD
+2022-04-20 16:33:10.512 string-2[71999:41335232] Concatenated string:   HelloWorld
+2022-04-20 16:33:10.512 string-2[71999:41335232] Length of Str3 :  10
+2022-04-20 16:33:10.512 string-2[71999:41335232] Using initWithFormat:   Hello World
+```
+
+## Structures
+
+Objective-C arrays allow you to define type of variables that can hold several data items of the same kind but **structure** is another user-defined data type available in Objective-C programming which allows you to combine data items of different kinds.
+
+Structures are used to represent a record, Suppose you want to keep track of your books in a library. You might want to track the following attributes about each book −
+
+- Title
+- Author
+- Subject
+- Book ID
+
+### Defining a Structure
+
+To define a structure, you must use the **struct** statement. The struct statement defines a new data type, with more than one member for your program. The format of the struct statement is shown below −
+
+```
+struct [structure tag] {
+   member definition;
+   member definition;
+   ...
+   member definition;
+} [one or more structure variables];  
+```
+
+The **structure tag** is optional and each member definition is a normal variable definition, such as int i; or float f; or any other valid variable definition. At the end of the structure's definition, before the final semicolon, you can specify one or more structure variables but it is optional. Here is the way you would declare the Book structure −
+
+```
+struct Books {
+   NSString *title;
+   NSString *author;
+   NSString *subject;
+   int   book_id;
+} book;  
+```
+
+### Accessing Structure Members
+
+To access any member of a structure, we use the **member access operator (.)**. The member access operator is coded as a period between the structure variable name and the structure member that we wish to access. You would use **struct** keyword to define variables of structure type. Following is the example to explain usage of structure −
+
+```
+#import <Foundation/Foundation.h>
+
+struct Books {
+   NSString *title;
+   NSString *author;
+   NSString *subject;
+   int   book_id;
+};
+ 
+int main() {
+   struct Books Book1;        /* Declare Book1 of type Book */
+   struct Books Book2;        /* Declare Book2 of type Book */
+ 
+   /* book 1 specification */
+   Book1.title = @"Objective-C Programming";
+   Book1.author = @"Nuha Ali"; 
+   Book1.subject = @"Objective-C Programming Tutorial";
+   Book1.book_id = 6495407;
+
+   /* book 2 specification */
+   Book2.title = @"Telecom Billing";
+   Book2.author = @"Zara Ali";
+   Book2.subject = @"Telecom Billing Tutorial";
+   Book2.book_id = 6495700;
+ 
+   /* print Book1 info */
+   NSLog(@"Book 1 title : %@\n", Book1.title);
+   NSLog(@"Book 1 author : %@\n", Book1.author);
+   NSLog(@"Book 1 subject : %@\n", Book1.subject);
+   NSLog(@"Book 1 book_id : %d\n", Book1.book_id);
+
+   /* print Book2 info */
+   NSLog(@"Book 2 title : %@\n", Book2.title);
+   NSLog(@"Book 2 author : %@\n", Book2.author);
+   NSLog(@"Book 2 subject : %@\n", Book2.subject);
+   NSLog(@"Book 2 book_id : %d\n", Book2.book_id);
+
+   return 0;
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+2022-04-20 16:51:50.146 structure-1[72164:41351175] Book 1 title : Objective-C Programming
+2022-04-20 16:51:50.146 structure-1[72164:41351175] Book 1 author : Nuha Ali
+2022-04-20 16:51:50.146 structure-1[72164:41351175] Book 1 subject : Objective-C Programming Tutorial
+2022-04-20 16:51:50.146 structure-1[72164:41351175] Book 1 book_id : 6495407
+2022-04-20 16:51:50.146 structure-1[72164:41351175] Book 2 title : Telecom Billing
+2022-04-20 16:51:50.146 structure-1[72164:41351175] Book 2 author : Zara Ali
+2022-04-20 16:51:50.146 structure-1[72164:41351175] Book 2 subject : Telecom Billing Tutorial
+2022-04-20 16:51:50.146 structure-1[72164:41351175] Book 2 book_id : 6495700
+
+```
+
+### Structures as Function Arguments
+
+You can pass a structure as a function argument in very similar way as you pass any other variable or pointer. You would access structure variables in the similar way as you have accessed in the above example −
+
+```
+#import <Foundation/Foundation.h>
+
+struct Books {
+   NSString *title;
+   NSString *author;
+   NSString *subject;
+   int   book_id;
+};
+
+@interface SampleClass:NSObject
+/* function declaration */
+- (void) printBook:( struct Books) book ;
+@end
+
+@implementation SampleClass 
+
+- (void) printBook:( struct Books) book {
+   NSLog(@"Book title : %@\n", book.title);
+   NSLog(@"Book author : %@\n", book.author);
+   NSLog(@"Book subject : %@\n", book.subject);
+   NSLog(@"Book book_id : %d\n", book.book_id);
+}
+
+@end
+
+int main() {
+   struct Books Book1;        /* Declare Book1 of type Book */
+   struct Books Book2;        /* Declare Book2 of type Book */
+ 
+   /* book 1 specification */
+   Book1.title = @"Objective-C Programming";
+   Book1.author = @"Nuha Ali"; 
+   Book1.subject = @"Objective-C Programming Tutorial";
+   Book1.book_id = 6495407;
+
+   /* book 2 specification */
+   Book2.title = @"Telecom Billing";
+   Book2.author = @"Zara Ali";
+   Book2.subject = @"Telecom Billing Tutorial";
+   Book2.book_id = 6495700;
+ 
+   SampleClass *sampleClass = [[SampleClass alloc]init];
+   /* print Book1 info */
+   [sampleClass printBook: Book1];
+
+   /* Print Book2 info */
+   [sampleClass printBook: Book2];
+
+   return 0;
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+2022-04-20 16:55:39.816 structure-2[72206:41354318] Book title : Objective-C Programming
+2022-04-20 16:55:39.816 structure-2[72206:41354318] Book author : Nuha Ali
+2022-04-20 16:55:39.816 structure-2[72206:41354318] Book subject : Objective-C Programming Tutorial
+2022-04-20 16:55:39.816 structure-2[72206:41354318] Book book_id : 6495407
+2022-04-20 16:55:39.816 structure-2[72206:41354318] Book title : Telecom Billing
+2022-04-20 16:55:39.816 structure-2[72206:41354318] Book author : Zara Ali
+2022-04-20 16:55:39.816 structure-2[72206:41354318] Book subject : Telecom Billing Tutorial
+2022-04-20 16:55:39.816 structure-2[72206:41354318] Book book_id : 6495700
+```
+
+### Pointers to Structures
+
+You can define pointers to structures in very similar way as you define pointer to any other variable as follows −
+
+```
+struct Books *struct_pointer;
+```
+
+Now, you can store the address of a structure variable in the above-defined pointer variable. To find the address of a structure variable, place the & operator before the structure's name as follows −
+
+```
+struct_pointer = &Book1;
+```
+
+To access the members of a structure using a pointer to that structure, you must use the -> operator as follows −
+
+```
+struct_pointer->title;
+```
+
+Let us re-write above example using structure pointer, hope this will be easy for you to understand the concept −
+
+```
+#import <Foundation/Foundation.h>
+
+struct Books {
+   NSString *title;
+   NSString *author;
+   NSString *subject;
+   int   book_id;
+};
+
+@interface SampleClass:NSObject
+/* function declaration */
+- (void) printBook:( struct Books *) book ;
+@end
+
+@implementation SampleClass 
+- (void) printBook:( struct Books *) book {
+   NSLog(@"Book title : %@\n", book->title);
+   NSLog(@"Book author : %@\n", book->author);
+   NSLog(@"Book subject : %@\n", book->subject);
+   NSLog(@"Book book_id : %d\n", book->book_id);
+}
+
+@end
+
+int main() {
+   struct Books Book1;        /* Declare Book1 of type Book */
+   struct Books Book2;        /* Declare Book2 of type Book */
+ 
+   /* book 1 specification */
+   Book1.title = @"Objective-C Programming";
+   Book1.author = @"Nuha Ali"; 
+   Book1.subject = @"Objective-C Programming Tutorial";
+   Book1.book_id = 6495407;
+
+   /* book 2 specification */
+   Book2.title = @"Telecom Billing";
+   Book2.author = @"Zara Ali";
+   Book2.subject = @"Telecom Billing Tutorial";
+   Book2.book_id = 6495700;
+ 
+   SampleClass *sampleClass = [[SampleClass alloc]init];
+   /* print Book1 info by passing address of Book1 */
+   [sampleClass printBook:&Book1];
+
+   /* print Book2 info by passing address of Book2 */
+   [sampleClass printBook:&Book2];
+
+   return 0;
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+2022-04-20 16:59:06.907 structure-3[72244:41357166] Book title : Objective-C Programming
+2022-04-20 16:59:06.907 structure-3[72244:41357166] Book author : Nuha Ali
+2022-04-20 16:59:06.907 structure-3[72244:41357166] Book subject : Objective-C Programming Tutorial
+2022-04-20 16:59:06.907 structure-3[72244:41357166] Book book_id : 6495407
+2022-04-20 16:59:06.907 structure-3[72244:41357166] Book title : Telecom Billing
+2022-04-20 16:59:06.907 structure-3[72244:41357166] Book author : Zara Ali
+2022-04-20 16:59:06.907 structure-3[72244:41357166] Book subject : Telecom Billing Tutorial
+2022-04-20 16:59:06.907 structure-3[72244:41357166] Book book_id : 6495700
+```
