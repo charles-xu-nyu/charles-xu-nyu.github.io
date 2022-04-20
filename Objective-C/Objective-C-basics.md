@@ -260,3 +260,41 @@ int func() {
    return 0;
 }
 ```
+
+## Function
+
+A function is a group of statements that together perform a task. Every Objective-C program has one C function, which is **main()**, and all of the most trivial programs can define additional functions.
+
+You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division usually is so each function performs a specific task.
+
+A function **declaration** tells the compiler about a function's name, return type, and parameters. A function **definition** provides the actual body of the function.
+
+Basically in Objective-C, we call the function as method.
+
+The Objective-C foundation framework provides numerous built-in methods that your program can call. For example, method **appendString()** to append string to another string.
+
+A method is known with various names like a function or a sub-routine or a procedure, etc.
+
+### Defining a Method
+
+The general form of a method definition in Objective-C programming language is as follows −
+
+```
+- (return_type) method_name:( argumentType1 )argumentName1 
+joiningArgument2:( argumentType2 )argumentName2 ... 
+joiningArgumentn:( argumentTypen )argumentNamen {
+   body of the function
+}
+```
+
+A method definition in Objective-C programming language consists of a method header and a method body. Here are all the parts of a method −
+
+- **Return Type** − A method may return a value. The **return_type** is the data type of the value the function returns. Some methods perform the desired operations without returning a value. In this case, the return_type is the keyword **void**.
+
+- **Method Name** − This is the actual name of the method. The method name and the parameter list together constitute the method signature.
+
+- **Arguments** − A argument is like a placeholder. When a function is invoked, you pass a value to the argument. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the arguments of a method. Arguments are optional; that is, a method may contain no argument.
+
+- **Joining Argument** − A joining argument is to make it easier to read and to make it clear while calling it.
+
+- **Method Body** − The method body contains a collection of statements that define what the method does.
