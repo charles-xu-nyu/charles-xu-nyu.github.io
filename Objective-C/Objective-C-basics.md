@@ -10,13 +10,13 @@ description: This section helps you with Objective-C basics, which will later be
 
 
 1. [Introduction](#introduction)
-2. [Environment Setup]（#environment-setup）
-3. Hello World!
-4. Variables
-5. Functions
-6. Blocks
-7. Numbers
-8. Arrays
+2. [Environment Setup](#environment-setup)
+3. [Hello World](#hello-world)
+4. [Variables](#variables)
+5. [Functions](#functions)
+6. [Blocks](#blocks)
+7. [Numbers](#numbers)
+8. [Arrays](#arrays)
 9. Arrays
 
 
@@ -84,7 +84,7 @@ We get the following output −
 2022-04-07 10:48:39.772 tutorialsPoint[1200] hello world
 ```
 
-## Hello World!
+## Hello World
 
 Before we study basic building blocks of the Objective-C programming language, let us look a bare minimum Objective-C program structure so that we can take it as a reference in upcoming chapter.
 
