@@ -396,5 +396,5 @@ int main () {
 I kept max() function along with main() function and complied the source code. While running final executable, it would produce the following result −
 
 ```
-2013-04-07 22:28:45.912 function[26080] Max value is : 200
+2022-04-07 22:28:45.912 function[26080] Max value is : 200
 ```
