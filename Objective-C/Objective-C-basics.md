@@ -161,3 +161,102 @@ The name of a variable can be composed of letters, digits, and the underscore ch
 |    4   | **double** |            A double-precision floating point value.           |
 |    5   |  **void**  |                Represents the absence of type.                |
 
+Objective-C programming language also allows to define various other types of variables, which we will cover in subsequent chapters like Enumeration, Pointer, Array, Structure, Union, etc. For this chapter, let us study only basic variable types.
+
+### Variable Definition in Objective-C
+
+A variable definition means to tell the compiler where and how much to create the storage for the variable. A variable definition specifies a data type and contains a list of one or more variables of that type as follows −
+
+```
+type variable_list;
+```
+
+Here, **type** must be a valid Objective-C data type including char, w_char, int, float, double, bool or any user-defined object, etc., and **variable_list** may consist of one or more identifier names separated by commas. Some valid declarations are shown here −
+
+```
+int    i, j, k;
+char   c, ch;
+float  f, salary;
+double d;
+```
+
+The line **int i, j, k**; both declares and defines the variables i, j and k; which instructs the compiler to create variables named i, j and k of type int.
+
+Variables can be initialized (assigned an initial value) in their declaration. The initializer consists of an equal sign followed by a constant expression as follows −
+
+```
+type variable_name = value;
+```
+
+Some examples are −
+
+```
+extern int d = 3, f = 5;    // declaration of d and f. 
+int d = 3, f = 5;           // definition and initializing d and f. 
+byte z = 22;                // definition and initializes z. 
+char x = 'x';               // the variable x has the value 'x'.
+```
+
+For definition without an initializer: variables with static storage duration are implicitly initialized with NULL (all bytes have the value 0); the initial value of all other variables is undefined.
+
+### Variable Declaration in Objective-C
+
+A variable declaration provides assurance to the compiler that there is one variable existing with the given type and name so that compiler proceed for further compilation without needing complete detail about the variable. A variable declaration has its meaning at the time of compilation only, compiler needs actual variable declaration at the time of linking of the program.
+
+A variable declaration is useful when you are using multiple files and you define your variable in one of the files, which will be available at the time of linking of the program. You will use **extern** keyword to declare a variable at any place. Though you can declare a variable multiple times in your Objective-C program but it can be defined only once in a file, a function or a block of code.
+
+### Example
+
+Try the following example, where variables have been declared at the top, but they have been defined and initialized inside the main function −
+
+```
+#import <Foundation/Foundation.h>
+
+// Variable declaration:
+extern int a, b;
+extern int c;
+extern float f;
+
+int main () {
+  /* variable definition: */
+  int a, b;
+  int c;
+  float f;
+ 
+  /* actual initialization */
+  a = 10;
+  b = 20;
+  
+  c = a + b;
+  NSLog(@"value of c : %d \n", c);
+
+  f = 70.0/3.0;
+  NSLog(@"value of f : %f \n", f);
+ 
+  return 0;
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+2022-04-07 22:43:31.695 variable[14019] value of c : 30 
+2022-04-07 22:43:31.695 variable[14019] value of f : 23.333334 
+```
+
+Same concept applies on function declaration where you provide a function name at the time of its declaration and its actual definition can be given anywhere else. In the following example, it's explained using C function and as you know Objective-C supports C style functions also −
+
+```
+// function declaration
+int func();
+
+int main() {
+   // function call
+   int i = func();
+}
+
+// function definition
+int func() {
+   return 0;
+}
+```
