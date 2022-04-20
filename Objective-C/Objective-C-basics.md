@@ -10,12 +10,13 @@ description: This section helps you with Objective-C basics, which will later be
 
 
 1. [Introduction](#introduction)
-3. Environment Setup
-4. Hello World!
-5. Variables
-6. Functions
-7. Blocks
-8. Numbers
+2. [Environment Setup]（#environment-setup）
+3. Hello World!
+4. Variables
+5. Functions
+6. Blocks
+7. Numbers
+8. Arrays
 9. Arrays
 
 
