@@ -11,6 +11,7 @@ description: This section helps you with Objective-C basics, which will later be
 1. Introduction
 2. Environment Setup
 3. Hello World
+4. Variable
 
 
 ## Introduction
@@ -143,5 +144,20 @@ Let us look various parts of the above program −
 Now when we compile and run the program, we will get the following result.
 
 ```
-2017-10-06 07:48:32.020 demo[65832] Hello, World!
+2022-04-06 07:48:32.020 demo[65832] Hello, World!
 ```
+
+## Variable
+
+A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in Objective-C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+
+The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because Objective-C is case-sensitive. Based on the basic types explained in previous chapter, there will be the following basic variable types −
+
+| Sr.No. |    Type    |                          Description                          |
+|:------:|:----------:|:-------------------------------------------------------------:|
+|    1   |  **char**  | Typically a single octet (one byte). This is an integer type. |
+|    2   |   **int**  |       The most natural size of integer for the machine.       |
+|    3   |  **float** |            A single-precision floating point value.           |
+|    4   | **double** |            A double-precision floating point value.           |
+|    5   |  **void**  |                Represents the absence of type.                |
+
