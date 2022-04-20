@@ -10,6 +10,7 @@ description: This section helps you with Objective-C basics, which will later be
 
 1. Introduction
 2. Environment Setup
+3. Hello World
 
 
 ## Introduction
@@ -76,3 +77,71 @@ We get the following output −
 2022-04-07 10:48:39.772 tutorialsPoint[1200] hello world
 ```
 
+## Hello World
+
+Before we study basic building blocks of the Objective-C programming language, let us look a bare minimum Objective-C program structure so that we can take it as a reference in upcoming chapter.
+
+A Objective-C program basically consists of the following parts −
+
+- Preprocessor Commands
+- Interface
+- Implementation
+- Method
+- Variables
+- Statements & Expressions
+- Comments
+
+Let us look at a simple code that would print the words "Hello World" −
+
+```
+#import <Foundation/Foundation.h>
+
+@interface SampleClass:NSObject
+- (void)sampleMethod;
+@end
+
+@implementation SampleClass
+
+- (void)sampleMethod {
+   NSLog(@"Hello, World! \n");
+}
+
+@end
+
+int main() {
+   /* my first program in Objective-C */
+   SampleClass *sampleClass = [[SampleClass alloc]init];
+   [sampleClass sampleMethod];
+   return 0;
+}
+```
+
+Let us look various parts of the above program −
+
+- The first line of the program #import <Foundation/Foundation.h> is a preprocessor command, which tells a Objective-C compiler to include Foundation.h file before going to actual compilation.
+
+- The next line @interface SampleClass:NSObject shows how to create an interface. It inherits NSObject, which is the base class of all objects.
+
+- The next line - (void)sampleMethod; shows how to declare a method.
+
+- The next line @end marks the end of an interface.
+ 
+- The next line @implementation SampleClass shows how to implement the interface SampleClass.
+
+- The next line - (void)sampleMethod{} shows the implementation of the sampleMethod.
+
+- The next line @end marks the end of an implementation.
+
+- The next line int main() is the main function where program execution begins.
+
+- The next line /*...*/ will be ignored by the compiler and it has been put to add additional comments in the program. So such lines are called comments in the program.
+
+- The next line NSLog(...) is another function available in Objective-C which causes the message "Hello, World!" to be displayed on the screen.
+
+- The next line return 0; terminates main()function and returns the value 0.
+
+Now when we compile and run the program, we will get the following result.
+
+```
+2017-10-06 07:48:32.020 demo[65832] Hello, World!
+```
