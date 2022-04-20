@@ -17,7 +17,7 @@ description: This section helps you with Objective-C basics, which will later be
 6. [Blocks](#blocks)
 7. [Numbers](#numbers)
 8. [Arrays](#arrays)
-9. Arrays
+9. Pointers
 
 
 ## Introduction
@@ -652,5 +652,32 @@ When the above code is compiled and executed, it produces the following result �
 2022-04-20 00:12:56.858 array[68438:40836856] Element[7] = 107
 2022-04-20 00:12:56.858 array[68438:40836856] Element[8] = 108
 2022-04-20 00:12:56.858 array[68438:40836856] Element[9] = 109
+```
+
+## Pointers
+
+Pointers in Objective-C are easy and fun to learn. Some Objective-C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers. So it becomes necessary to learn pointers to become a perfect Objective-C programmer. Let's start learning them in simple and easy steps.
+
+As you know, every variable is a memory location and every memory location has its address defined which can be accessed using ampersand (&) operator, which denotes an address in memory. Consider the following example, which will print the address of the variables defined −
+
+```
+#import <Foundation/Foundation.h>
+
+int main () {
+   int  var1;
+   char var2[10];
+
+   NSLog(@"Address of var1 variable: %x\n", &var1 );
+   NSLog(@"Address of var2 variable: %x\n", &var2 );
+
+   return 0;
+}
+```
+
+When the above code is compiled and executed, it produces the result something as follows −
+
+```
+2022-04-20 15:54:52.141 pointer-1[71598:41302632] Address of var1 variable: e37bb4a4
+2022-04-20 15:54:52.141 pointer-1[71598:41302632] Address of var2 variable: e37bb4ae
 ```
 
