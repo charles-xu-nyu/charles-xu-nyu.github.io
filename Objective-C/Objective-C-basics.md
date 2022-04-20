@@ -402,7 +402,7 @@ I kept max() function along with main() function and complied the source code. W
 2022-04-07 22:28:45.912 function[26080] Max value is : 200
 ```
 
-### Blocks
+## Blocks
 
 An Objective-C class defines an object that combines data with related behavior. Sometimes, it makes sense just to represent a single task or unit of behavior, rather than a collection of methods.
 
