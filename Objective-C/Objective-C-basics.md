@@ -13,6 +13,7 @@ description: This section helps you with Objective-C basics, which will later be
 3. Hello World!
 4. Variable
 5. Function
+6. Blocks
 
 
 ## Introduction
@@ -398,3 +399,10 @@ I kept max() function along with main() function and complied the source code. W
 ```
 2022-04-07 22:28:45.912 function[26080] Max value is : 200
 ```
+
+### Blocks
+
+An Objective-C class defines an object that combines data with related behavior. Sometimes, it makes sense just to represent a single task or unit of behavior, rather than a collection of methods.
+
+Blocks are a language-level feature added to C, Objective-C and C++ which allow you to create distinct segments of code that can be passed around to methods or functions as if they were values. Blocks are Objective-C objects which means they can be added to collections like NSArray or NSDictionary. They also have the ability to capture values from the enclosing scope, making them similar to closures or lambdas in other programming languages.
+
