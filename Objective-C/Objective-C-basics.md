@@ -12,6 +12,7 @@ description: This section helps you with Objective-C basics, which will later be
 2. Environment Setup
 3. Hello World!
 4. Variable
+5. Function
 
 
 ## Introduction
@@ -298,3 +299,102 @@ A method definition in Objective-C programming language consists of a method hea
 - **Joining Argument** − A joining argument is to make it easier to read and to make it clear while calling it.
 
 - **Method Body** − The method body contains a collection of statements that define what the method does.
+
+### Example
+
+Following is the source code for a method called **max()**. This method takes two parameters num1 and num2 and returns the maximum between the two −
+
+```
+/* function returning the max between two numbers */
+- (int) max:(int) num1 secondNumber:(int) num2 {
+   
+   /* local variable declaration */
+   int result;
+ 
+   if (num1 > num2) {
+      result = num1;
+   } else {
+      result = num2;
+   }
+ 
+   return result; 
+}
+```
+
+### Method Declarations
+
+A method **declaration** tells the compiler about a function name and how to call the method. The actual body of the function can be defined separately.
+
+A method declaration has the following parts −
+
+```
+- (return_type) function_name:( argumentType1 )argumentName1 
+joiningArgument2:( argumentType2 )argumentName2 ... 
+joiningArgumentn:( argumentTypen )argumentNamen;
+```
+
+For the above-defined function max(), following is the method declaration −
+
+```
+-(int) max:(int)num1 andNum2:(int)num2;
+```
+
+Method declaration is required when you define a method in one source file and you call that method in another file. In such case you should declare the function at the top of the file calling the function.
+
+### Calling a method
+
+While creating a Objective-C method, you give a definition of what the function has to do. To use a method, you will have to call that function to perform the defined task.
+
+When a program calls a function, program control is transferred to the called method. A called method performs defined task, and when its return statement is executed or when its function-ending closing brace is reached, it returns program control back to the main program.
+
+To call a method, you simply need to pass the required parameters along with method name, and if method returns a value, then you can store returned value. For example −
+
+```
+#import <Foundation/Foundation.h>
+
+@interface SampleClass:NSObject
+/* method declaration */
+- (int)max:(int)num1 andNum2:(int)num2;
+@end
+
+@implementation SampleClass
+
+/* method returning the max between two numbers */
+- (int)max:(int)num1 andNum2:(int)num2 {
+
+   /* local variable declaration */
+   int result;
+ 
+   if (num1 > num2) {
+      result = num1;
+   } else {
+      result = num2;
+   }
+ 
+   return result; 
+}
+
+@end
+
+int main () {
+   
+   /* local variable definition */
+   int a = 100;
+   int b = 200;
+   int ret;
+   
+   SampleClass *sampleClass = [[SampleClass alloc]init];
+
+   /* calling a method to get max value */
+   ret = [sampleClass max:a andNum2:b];
+ 
+   NSLog(@"Max value is : %d\n", ret );
+   return 0;
+}
+```
+
+I kept max() function along with main() function and complied the source code. While running final executable, it would produce the following result −
+
+```
+2013-04-07 22:28:45.912 function[26080] Max value is : 200
+```
