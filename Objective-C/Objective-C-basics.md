@@ -11,9 +11,10 @@ description: This section helps you with Objective-C basics, which will later be
 1. Introduction
 2. Environment Setup
 3. Hello World!
-4. Variable
-5. Function
+4. Variables
+5. Functions
 6. Blocks
+7. Numbers
 
 
 ## Introduction
@@ -149,7 +150,7 @@ Now when we compile and run the program, we will get the following result.
 2022-04-06 07:48:32.020 demo[65832] Hello, World!
 ```
 
-## Variable
+## Variables
 
 A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in Objective-C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
 
@@ -263,7 +264,7 @@ int func() {
 }
 ```
 
-## Function
+## Functions
 
 A function is a group of statements that together perform a task. Every Objective-C program has one C function, which is **main()**, and all of the most trivial programs can define additional functions.
 
@@ -491,3 +492,67 @@ Let us compile and execute it, it will produce the following result −
 ```
 
 Blocks are used more in iOS applications and Mac OS X. So its more important to understand the usage of blocks.
+
+## Numbers
+
+In Objective-C programming language, in order to save the basic data types like int, float, bool in object form,
+
+Objective-C provides a range of methods to work with NSNumber and important ones are listed in following table.
+
+| Sr.No. |                        Method                        |                                           Description                                          |
+|:------:|:----------------------------------------------------:|:----------------------------------------------------------------------------------------------:|
+|    1   |     **+ (NSNumber *)numberWithBool:(BOOL)value**     |     Creates and returns an NSNumber object containing a given value, treating it as a BOOL.    |
+|    2   |     **+ (NSNumber *)numberWithChar:(char)value**     | Creates and returns an NSNumber object containing a given value, treating it as a signed char. |
+|    3   |   **+ (NSNumber *)numberWithDouble:(double)value**   |    Creates and returns an NSNumber object containing a given value, treating it as a double.   |
+|    4   |    **+ (NSNumber *)numberWithFloat:(float)value**    |    Creates and returns an NSNumber object containing a given value, treating it as a float.    |
+|    5   |      **+ (NSNumber *)numberWithInt:(int)value**      |  Creates and returns an NSNumber object containing a given value, treating it as a signed int. |
+|    6   | **+ (NSNumber *)numberWithInteger:(NSInteger)value** |  Creates and returns an NSNumber object containing a given value, treating it as an NSInteger. |
+|    7   |                 **- (BOOL)boolValue**                |                             Returns the receiver's value as a BOOL.                            |
+|    8   |                 **- (char)charValue**                |                             Returns the receiver's value as a char.                            |
+|    9   |               **- (double)doubleValue**              |                            Returns the receiver's value as a double.                           |
+|   10   |                **- (float)floatValue**               |                            Returns the receiver's value as a float.                            |
+|   11   |             **- (NSInteger)integerValue**            |                          Returns the receiver's value as an NSInteger.                         |
+|   12   |                  **- (int)intValue**                 |                             Returns the receiver's value as an int.                            |
+|   13   |             **- (NSString *)stringValue**            |                    Returns the receiver's value as a human-readable string.                    |
+
+Here is a simple example for using NSNumber which multiplies two numbers and returns the product.
+
+```
+#import <Foundation/Foundation.h>
+
+@interface SampleClass:NSObject
+- (NSNumber *)multiplyA:(NSNumber *)a withB:(NSNumber *)b;
+@end
+
+@implementation SampleClass
+
+- (NSNumber *)multiplyA:(NSNumber *)a withB:(NSNumber *)b {
+   float number1 = [a floatValue];
+   float number2 = [b floatValue];
+   float product = number1 * number2;
+   NSNumber *result = [NSNumber numberWithFloat:product];
+   return result;
+}
+
+@end
+
+int main() {
+   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+
+   SampleClass *sampleClass = [[SampleClass alloc]init];
+   NSNumber *a = [NSNumber numberWithFloat:10.5];
+   NSNumber *b = [NSNumber numberWithFloat:10.0];   
+   NSNumber *result = [sampleClass multiplyA:a withB:b];
+   NSString *resultString = [result stringValue];
+   NSLog(@"The product is %@",resultString);
+
+   [pool drain];
+   return 0;
+}
+```
+
+Now when we compile and run the program, we will get the following result.
+
+```
+2022-04-19 23:57:51.092 number[68210:40822280] The product is 105
+```
