@@ -43,7 +43,7 @@ Following are the list of demos available in this repository. Each demo has a re
 | `Sine Wave Demo 2`       | App to demonstrate generating sine wave with variable frequency (uses buttons)                                                        |
 | `Sine Wave Demo 3`       | App to demonstrate generating sine wave with variable frequency (uses Slider)                                                         |
 | `Sine Wave Demo 4`       | App to demonstrate generating sine wave with variable frequency and gain (uses Slider)                                                |
-| `Piano`                  | A fun app. A piano simulator                                                                                                          |
+| `Piano`                  | A fun app. A piano simulator.                                                                                                          |
 
 <!---
 ## Welcome to GitHub Pages
