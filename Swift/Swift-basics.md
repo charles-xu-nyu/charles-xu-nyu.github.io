@@ -41,5 +41,33 @@ Now you have xCode installed on your machine. Next, open Xcode from the Applicat
 
 Select **Create a new Xcode Project** option and enter a name for project and select swift as your language. Finally, you will get the project window as follows −
 
+![Project interface](../images/project-interface.png)
 
+Following is the code taken from the default Swift project window.
+
+```
+//
+//  ContentView.swift
+//  Hello world
+//
+//  Created by Charles Xu on 4/20/22.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, world!")
+            .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+```
+
+When the above program gets loaded, it should display the following result in simulator result area (Right Hand Side).
 
