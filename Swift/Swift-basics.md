@@ -37,7 +37,7 @@ Xcode is currently available at [here](https://developer.apple.com/xcode/). You 
 
 Now you have xCode installed on your machine. Next, open Xcode from the Application folder and proceed after accepting the terms and conditions. If everything is fine, you will get the following screen −
 
-
+![Welcome to Xcode](../images/welcome-to-xcode.png)
 
 
 
