@@ -71,3 +71,6 @@ struct ContentView_Previews: PreviewProvider {
 
 When the above program gets loaded, it should display the following result in simulator result area (Right Hand Side).
 
+![simulator](../images/simulator.png)
+
+Congratulations, you have your Swift programming environment ready and you can proceed with your learning vehicle "Tutorials Point".
