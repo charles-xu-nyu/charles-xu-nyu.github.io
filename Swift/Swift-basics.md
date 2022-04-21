@@ -24,7 +24,7 @@ Swift defines away large classes of common programming errors by adopting modern
 - Optionals ensure that nil values are handled explicitly.
 - Memory is managed automatically.
 - Error handling allows controlled recovery from unexpected failures.
-- 
+ 
 Swift code is compiled and optimized to get the most out of modern hardware. The syntax and standard library have been designed based on the guiding principle that the obvious way to write your code should also perform the best. Its combination of safety and speed make Swift an excellent choice for everything from “Hello, world!” to an entire operating system.
 
 Swift combines powerful type inference and pattern matching with a modern, lightweight syntax, allowing complex ideas to be expressed in a clear and concise manner. As a result, code is not just easier to write, but easier to read and maintain as well.
