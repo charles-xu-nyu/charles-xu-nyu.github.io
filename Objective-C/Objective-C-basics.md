@@ -10,7 +10,7 @@ description: This section helps you with Objective-C basics, which will later be
 
 
 1. [Introduction](#introduction)
-2. [Environment Setup](#environment-setup)
+2. [Environment](#environment)
 3. [Hello World](#hello-world)
 4. [Variables](#variables)
 5. [Functions](#functions)
@@ -28,7 +28,7 @@ Objective-C is general-purpose language that is developed on top of C Programmin
 
 Initially, Objective-C was developed by NeXT for its NeXTSTEP OS from whom it was taken over by Apple for its iOS and Mac OS X.
 
-## Environment Setup
+## Environment
 
 ### Local Environment Setup
 
