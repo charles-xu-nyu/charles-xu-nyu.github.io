@@ -8,7 +8,7 @@ description: This section helps you with getting started with Swift.
 
 ## Contents
 1. Introduction
-
+2. Environment
 
 ## Introduction
 
@@ -28,3 +28,16 @@ Swift defines away large classes of common programming errors by adopting modern
 Swift code is compiled and optimized to get the most out of modern hardware. The syntax and standard library have been designed based on the guiding principle that the obvious way to write your code should also perform the best. Its combination of safety and speed make Swift an excellent choice for everything from “Hello, world!” to an entire operating system.
 
 Swift combines powerful type inference and pattern matching with a modern, lightweight syntax, allowing complex ideas to be expressed in a clear and concise manner. As a result, code is not just easier to write, but easier to read and maintain as well.
+
+## Environment
+
+Swift provides a Playground platform for learning purpose and we are going to setup the same. You need xCode software to start your Swift coding in Playground. Once you are comfortable with the concepts of Swift, you can use xCode IDE for iOS/OS x application development.
+
+Xcode is currently available at [here](https://developer.apple.com/xcode/). You could also download from appstore.
+
+Now you have xCode installed on your machine. Next, open Xcode from the Application folder and proceed after accepting the terms and conditions. If everything is fine, you will get the following screen −
+
+
+
+
+
