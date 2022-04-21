@@ -31,13 +31,15 @@ Swift combines powerful type inference and pattern matching with a modern, light
 
 ## Environment
 
-Swift provides a Playground platform for learning purpose and we are going to setup the same. You need xCode software to start your Swift coding in Playground. Once you are comfortable with the concepts of Swift, you can use xCode IDE for iOS/OS x application development.
+Swift provides a platform for learning purpose and we are going to setup the same. You need xCode software to start your Swift coding. Once you are comfortable with the concepts of Swift, you can use xCode IDE for iOS/OS x application development.
 
 Xcode is currently available at [here](https://developer.apple.com/xcode/). You could also download from appstore.
 
 Now you have xCode installed on your machine. Next, open Xcode from the Application folder and proceed after accepting the terms and conditions. If everything is fine, you will get the following screen −
 
 ![Welcome to Xcode](../images/welcome-to-xcode.png)
+
+Select **Create a new Xcode Project** option and enter a name for project and select swift as your language. Finally, you will get the project window as follows −
 
 
 
