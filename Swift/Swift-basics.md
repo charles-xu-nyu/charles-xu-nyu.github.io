@@ -7,8 +7,8 @@ description: This section helps you with getting started with Swift.
 # [Swift](https://developer.apple.com/swift/) Basics
 
 ## Contents
-1. Introduction
-2. Environment
+1. [Introduction](#introduction)
+2. [Environment](#environment)
 
 ## Introduction
 
