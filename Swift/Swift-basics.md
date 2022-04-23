@@ -74,3 +74,122 @@ When the above program gets loaded, it should display the following result in si
 ![simulator](../images/simulator.png)
 
 Congratulations, you have your Swift programming environment ready and you can proceed with your learning vehicle "Tutorials Point".
+
+# Optionals
+
+Swift also introduces **Optionals** type, which handles the absence of a value. Optionals say either "there is a value, and it equals x" or "there isn't a value at all".
+
+An Optional is a type on its own, actually one of Swift’s new super-powered enums. It has two possible values, **None** and **Some(T)**, where **T** is an associated value of the correct data type available in Swift.
+
+Here’s an optional Integer declaration −
+
+```
+var perhapsInt: Int?
+```
+
+Here’s an optional String declaration −
+
+```
+var perhapsStr: String?
+```
+
+The above declaration is equivalent to explicitly initializing it to nil which means no value −
+
+```
+var perhapsStr: String? = nil
+```
+
+Let's take the following example to understand how optionals work in Swift 4 −
+
+```
+var myString:String? = nil
+
+if myString != nil {
+   print(myString)
+} else {
+   print("myString has nil value")
+}
+```
+
+When we run the above program using playground, we get the following result −
+
+```
+myString has nil value
+```
+
+Optionals are similar to using **nil** with pointers in Objective-C, but they work for any type, not just classes.
+
+### Forced Unwrapping
+
+If you defined a variable as **optional**, then to get the value from this variable, you will have to **unwrap** it. This just means putting an exclamation mark at the end of the variable.
+
+Let's take a simple example −
+
+```
+var myString:String?
+
+myString = "Hello, Swift!"
+
+if myString != nil {
+   print(myString)
+} else {
+   print("myString has nil value")
+}
+```
+
+When we run the above program using playground, we get the following result −
+
+```
+Optional("Hello, Swift!")
+```
+
+Now let's apply unwrapping to get the correct value of the variable −
+
+```
+var myString:String?
+
+myString = "Hello, Swift!"
+
+if myString != nil {
+   print( myString! )
+} else {
+   print("myString has nil value")
+}
+```
+
+When we run the above program using playground, we get the following result.
+
+```
+Hello, Swift!
+```
+
+### Optional Binding
+
+Use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable.
+
+An optional binding for the if statement is as follows −
+
+```
+if let constantName = someOptional {
+   statements
+}
+```
+
+Let's take a simple example to understand the usage of optional binding −
+
+```
+var myString:String?
+myString = "Hello, Swift!"
+
+if let yourString = myString {
+   print("Your string has - \(yourString)")
+} else {
+   print("Your string does not have a value")
+}
+```
+
+When we run the above program using playground, we get the following result −
+
+```
+Your string has - Hello, Swift!
+```
