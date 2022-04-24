@@ -9,6 +9,8 @@ description: This section helps you with getting started with Swift.
 ## Contents
 1. [Introduction](#introduction)
 2. [Environment](#environment)
+3. [Optionals](#optionals)
+4. [Strings](#strings)
 
 ## Introduction
 
@@ -193,3 +195,73 @@ When we run the above program using playground, we get the following result −
 ```
 Your string has - Hello, Swift!
 ```
+
+## Strings
+
+Strings in Swift are an ordered collection of characters, such as "Hello, World!" and they are represented by the Swift data type **String**, which in turn represents a collection of values of **Character** type.
+
+### Create a String
+
+You can create a String either by using a string literal or creating an instance of a String class as follows −
+
+```
+// String creation using String literal
+var stringA = "Hello, Swift!"
+print( stringA )
+
+// String creation using String instance
+var stringB = String("Hello, Swift!")
+print( stringB )
+
+//Multiple line string
+
+let stringC = """
+Hey this is a
+example of multiple Line
+string by Charles 
+
+"""
+print(stringC)
+```
+
+When the above code is compiled and executed, it produces the following result
+
+```
+Hello, Swift!
+Hello, Swift!
+Hey this is a
+example of multiple Line
+string by Charles
+```
+
+### Empty String
+
+You can create an empty String either by using an empty string literal or creating an instance of String class as shown below. You can also check whether a string is empty or not using the Boolean property **isEmpty**.
+
+```
+// Empty string creation using String literal
+var stringA = ""
+
+if stringA.isEmpty {
+   print( "stringA is empty" )
+} else {
+   print( "stringA is not empty" )
+}
+
+// Empty string creation using String instance
+let stringB = String()
+
+if stringB.isEmpty {
+   print( "stringB is empty" )
+} else {
+   print( "stringB is not empty" )
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+stringA is empty
+stringB is empty
+```
+
