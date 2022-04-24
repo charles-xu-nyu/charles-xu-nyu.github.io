@@ -265,3 +265,139 @@ stringA is empty
 stringB is empty
 ```
 
+### String Interpolation
+
+String interpolation is a way to construct a new String value from a mix of constants, variables, literals, and expressions by including their values inside a string literal.
+
+Each item (variable or constant) that you insert into the string literal is wrapped in a pair of parentheses, prefixed by a backslash. Here is a simple example −
+
+```
+var varA = 20
+let constA = 100
+var varC:Float = 20.0
+
+var stringA = "\(varA) times \(constA) is equal to \(varC * 100)"
+print( stringA )
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+20 times 100 is equal to 2000.0
+```
+
+### String Concatenation
+
+You can use the + operator to concatenate two strings or a string and a character, or two characters. Here is a simple example −
+
+```
+let constA = "Hello,"
+let constB = "World!"
+
+var stringA = constA + constB
+print( stringA )
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+Hello,World!
+```
+
+### String Length
+
+Swift strings do not have a **length** property, but you can use the global count() function to count the number of characters in a string. Here is a simple example −
+
+```
+var varA = "Hello, Swift!"
+
+print( "\(varA), length is \((varA.count))" )
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+Hello, Swift!, length is 13
+```
+
+### String Comparison
+
+You can use the == operator to compare two strings variables or constants. Here is a simple example −
+
+```
+var varA = "Hello, Swift!"
+var varB = "Hello, World!"
+
+if varA == varB {
+   print( "\(varA) and \(varB) are equal" )
+} else {
+   print( "\(varA) and \(varB) are not equal" )
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+Hello, Swift! and Hello, World! are not equal
+```
+
+### String Iterating
+
+Strings are again a collection of values in swift 4, so we can iterate over string using loops. −
+
+```
+for chars in "ThisString" {
+   print(chars, terminator: " ")
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+T h i s S t r i n g
+```
+
+### Unicode Strings
+
+You can access a UTF-8 and UTF-16 representation of a String by iterating over its utf8 and utf16 properties as demonstrated in the following example −
+
+```
+var unicodeString = "Dog???"
+
+print("UTF-8 Codes: ")
+for code in unicodeString.utf8 {
+   print("\(code) ")
+}
+
+print("\n")
+
+print("UTF-16 Codes: ")
+for code in unicodeString.utf16 {
+   print("\(code) ")
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+UTF-8 Codes: 
+68 
+111 
+103 
+63 
+63 
+63 
+
+
+UTF-16 Codes: 
+68 
+111 
+103 
+63 
+63 
+63
+```
+
+### String Functions & Operators
+
+Swift supports a wide range of methods and operators related to Strings −
