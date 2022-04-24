@@ -401,3 +401,25 @@ UTF-16 Codes:
 ### String Functions & Operators
 
 Swift supports a wide range of methods and operators related to Strings −
+
+| **Sr.No** |             **Functions/Operators**            |                                                    **Purpose**                                                   |
+|:---------:|:----------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
+|     1     |                   **isEmpty**                  |                         A Boolean value that determines whether a string is empty or not.                        |
+|     2     |          **hasPrefix(prefix: String)**         |            Function to check whether a given parameter string exists as a prefix of the string or not.           |
+|     3     |          **hasSuffix(suffix: String)**         |            Function to check whether a given parameter string exists as a suffix of the string or not.           |
+|     4     |                   **toInt()**                  |                              Function to convert numeric String value into Integer.                              |
+|     5     |                   **count()**                  |                          Global function to count the number of Characters in a string.                          |
+|     6     |                    **utf8**                    |                              Property to return a UTF-8 representation of a string.                              |
+|     7     |                    **utf16**                   |                              Property to return a UTF-16 representation of a string.                             |
+|     8     |               **unicodeScalars**               |                          Property to return a Unicode Scalar representation of a string.                         |
+|     9     |                      **+**                     |               Operator to concatenate two strings, or a string and a character, or two characters.               |
+|     10    |                     **+=**                     |                          Operator to append a string or character to an existing string.                         |
+|     11    |                     **==**                     |                                Operator to determine the equality of two strings.                                |
+|     12    |                      **<**                     | Operator to perform a lexicographical comparison to determine whether one string evaluates as less than another. |
+|     13    |                 **startIndex**                 |                                   To get the value at starting index of string.                                  |
+|     14    |                  **endIndex**                  |                                    To get the value at ending index of string.                                   |
+|     15    |                   **Indices**                  |                  To access the indeces one by one. i.e all the characters of string one by one.                  |
+|     16    |        **insert("Value", at: position)**       |                                         To insert a value at a position.                                         |
+|     17    | **remove(at: position) removeSubrange(range)** |                   to remove a value at a position, or to remove a range of values from string.                   |
+|     18    |                 **reversed()**                 |                                          returns the reverse of a string                                         |
+
