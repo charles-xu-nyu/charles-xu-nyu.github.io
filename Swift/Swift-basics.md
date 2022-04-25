@@ -11,6 +11,7 @@ description: This section helps you with getting started with Swift.
 2. [Environment](#environment)
 3. [Optionals](#optionals)
 4. [Strings](#strings)
+5. [Arrays](#arrays)
 
 ## Introduction
 
@@ -422,4 +423,144 @@ Swift supports a wide range of methods and operators related to Strings −
 |     16    |        **insert("Value", at: position)**       |                                         To insert a value at a position.                                         |
 |     17    | **remove(at: position) removeSubrange(range)** |                   to remove a value at a position, or to remove a range of values from string.                   |
 |     18    |                 **reversed()**                 |                                          returns the reverse of a string                                         |
+
+## Arrays
+
+Swift arrays are used to store ordered lists of values of the same type. Swift puts strict checking which does not allow you to enter a wrong type in an array, even by mistake.
+
+If you assign a created array to a variable, then it is always mutable, which means you can change it by adding, removing, or changing its items; but if you assign an array to a constant, then that array is immutable, and its size and contents cannot be changed.
+
+### Creating Arrays
+
+You can create an empty array of a certain type using the following initializer syntax −
+
+```
+var someArray = [SomeType]()
+```
+
+Here is the syntax to create an array of a given size a* and initialize it with a value −
+
+```
+var someArray = [SomeType](count: NumbeOfElements, repeatedValue: InitialValue)
+```
+
+You can use the following statement to create an empty array of Int type having 3 elements and the initial value as zero −
+
+```
+var someInts = [Int](count: 3, repeatedValue: 0)
+```
+
+Following is one more example to create an array of three elements and assign three values to that array −
+
+```
+var someInts:[Int] = [10, 20, 30]
+```
+
+### Accessing Arrays
+
+You can retrieve a value from an array by using **subscript** syntax, passing the index of the value you want to retrieve within square brackets immediately after the name of the array as follows −
+
+```
+var someVar = someArray[index]
+```
+
+Here, the **index** starts from 0 which means the first element can be accessed using the index as 0, the second element can be accessed using the index as 1 and so on.
+
+### Modifying Arrays
+
+You can use **append()** method or addition assignment operator (+=) to add a new item at the end of an array. Take a look at the following example. Here, initially, we create an empty array and then add new elements into the same array −
+
+```
+var someInts = [Int]()
+
+someInts.append(20)
+someInts.append(30)
+someInts += [40]
+
+var someVar = someInts[0]
+
+print( "Value of first element is \(someVar)" )
+print( "Value of second element is \(someInts[1])" )
+print( "Value of third element is \(someInts[2])" )
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+Value of first element is 20
+Value of second element is 30
+Value of third element is 40
+```
+
+You can modify an existing element of an Array by assigning a new value at a given index as shown in the following example −
+
+```
+var someInts = [Int]()
+
+someInts.append(20)
+someInts.append(30)
+someInts += [40]
+
+// Modify last element
+someInts[2] = 50
+
+var someVar = someInts[0]
+
+print( "Value of first element is \(someVar)" )
+print( "Value of second element is \(someInts[1])" )
+print( "Value of third element is \(someInts[2])" )
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+Value of first element is 20
+Value of second element is 30
+Value of third element is 50
+```
+
+### Iterating Over an Array
+
+You can use **for-in** loop to iterate over the entire set of values in an array as shown in the following example −
+
+```
+var someStrs = [String]()
+
+someStrs.append("Apple")
+someStrs.append("Amazon")
+someStrs += ["Google"]
+for item in someStrs {
+   print(item)
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+Apple
+Amazon
+Google
+```
+
+You can use **enumerate()** function which returns the index of an item along with its value as shown below in the following example −
+
+```
+var someStrs = [String]()
+
+someStrs.append("Apple")
+someStrs.append("Amazon")
+someStrs += ["Google"]
+
+for (index, item) in someStrs.enumerated() {
+   print("Value at index = \(index) is \(item)")
+}
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+Value at index = 0 is Apple
+Value at index = 1 is Amazon
+Value at index = 2 is Google
+```
 
