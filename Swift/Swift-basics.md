@@ -933,3 +933,31 @@ When we run above program using playground, we get the following result −
 100
 200
 ```
+
+### Parameters and Return Values
+
+Swift provides flexible function parameters and its return values from simple to complex values. Similar to that of C and Objective C, functions in Swift may also take several forms.
+
+A function is accessed by passing its parameter values to the body of the function. We can pass single to multiple parameter values as tuples inside the function.
+
+```
+func mult(no1: Int, no2: Int) -> Int {
+   return no1*no2
+}
+
+print(mult(no1: 2, no2: 20))
+print(mult(no1: 3, no2: 15))
+print(mult(no1: 4, no2: 30))
+```
+
+When we run above program using playground, we get the following result −
+
+```
+40
+45
+120
+```
+
+### Functions without Parameters
+
+We may also have functions without any parameters.
