@@ -871,15 +871,65 @@ someDict3 = true
 
 A function is a set of statements organized together to perform a specific task. A Swift function can be as simple as a simple C function to as complex as an Objective C language function. It allows us to pass local and global parameter values inside the function calls.
 
-[ ]Function Declaration − tells the compiler about a function's name, return type, and parameters.
+- **Function Declaration** − tells the compiler about a function's name, return type, and parameters.
 
-[ ]Function Definition − It provides the actual body of the function.
+- **Function Definition** − It provides the actual body of the function.
 
-Swift 4 functions contain parameter type and its return types.
+Swift functions contain parameter type and its return types.
 
-Function Definition
-In Swift 4, a function is defined by the "func" keyword. When a function is newly defined, it may take one or several values as input 'parameters' to the function and it will process the functions in the main body and pass back the values to the functions as output 'return types'.
+### Function Definition
+
+In Swift, a function is defined by the "func" keyword. When a function is newly defined, it may take one or several values as input 'parameters' to the function and it will process the functions in the main body and pass back the values to the functions as output 'return types'.
 
 Every function has a function name, which describes the task that the function performs. To use a function, you "call" that function with its name and pass input values (known as arguments) that match the types of the function's parameters. Function parameters are also called as 'tuples'.
 
 A function's arguments must always be provided in the same order as the function's parameter list and the return values are followed by →.
+
+```
+func funcname(Parameters) -> returntype {
+   Statement1
+   Statement2
+   ---
+   Statement N
+   return parameters
+}
+```
+
+Take a look at the following code. The student’s name is declared as string datatype declared inside the function 'student' and when the function is called, it will return student’s name.
+
+```
+func student(name: String) -> String {
+   return name
+}
+
+print(student(name: "First Program"))
+print(student(name: "About Functions"))
+```
+
+When we run the above program using playground, we get the following result −
+
+```
+First Program
+About Functions
+```
+
+### Calling a Function
+
+Let us suppose we defined a function called 'display' to Consider for example to display the numbers a function with function name 'display' is initialized first with argument 'no1' which holds integer data type. Then the argument 'no1' is assigned to argument 'a' which hereafter will point to the same data type integer. Now the argument 'a' is returned to the function. Here display() function will hold the integer value and return the integer values when each and every time the function is invoked.
+
+```
+func display(no1: Int) -> Int {
+   let a = no1
+   return a
+}
+
+print(display(no1: 100))
+print(display(no1: 200))
+```
+
+When we run above program using playground, we get the following result −
+
+```
+100
+200
+```
