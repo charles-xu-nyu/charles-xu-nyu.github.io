@@ -14,6 +14,7 @@ description: This section helps you with getting started with Swift.
 5. [Arrays](#arrays)
 6. [Dictionaries](#dictionaries)
 7. [Functions](#functions)
+8. [Enumerations](#enumerations)
 
 ## Introduction
 
@@ -1290,5 +1291,169 @@ When we run the above program using playground, we get the following result −
 
 ```
 -30
+```
+
+## Enumerations
+
+An enumeration is a user-defined data type which consists of set of related values. Keyword **enum** is used to defined enumerated data type.
+
+### Enumeration Functionality
+
+Enumeration in Swift also resembles the structure of C and Objective C.
+
+- It is declared in a class and its values are accessed through the instance of that class.
+- Initial member value is defined using enum intializers.
+- Its functionality is also extended by ensuring standard protocol functionality.
+
+Enumerations are introduced with the enum keyword and place their entire definition within a pair of braces −
+
+```
+enum enumname {
+   // enumeration values are described here
+}
+```
+
+For example, you can define an enumeration for days of week as follows −
+
+```
+enum DaysofaWeek {
+   case Sunday
+   case Monday
+   ---
+   case Saturday
+}
+```
+
+```
+enum names {
+   case Swift
+   case Closures
+}
+
+var lang = names.Closures
+lang = .Closures
+
+switch lang {
+   case .Swift:
+      print("Welcome to Swift")
+   case .Closures:
+      print("Welcome to Closures")
+   default:
+      print("Introduction")
+}
+```
+
+When we run the above program using playground, we get the following result −
+
+```
+Welcome to Closures
+```
+
+Swift enumeration does not assign its members default value like C and Objective C. Instead the members are explicitly defined by their enumeration names. Enumeration name should start with a capital letter (Ex: enum DaysofaWeek).
+
+```
+var weekDay = DaysofaWeek.Sunday
+```
+
+Here the Enumeration name 'DaysofaWeek' is assigned to a variable weekday.Sunday. It informs the compiler that the datatype belongs to Sunday will be assigned to subsequent enum members of that particular class. Once the enum member datatype is defined, the members can be accessed by passing values and further computations.
+
+### Enumeration with Switch Statement
+
+Swift 'Switch' statement also follows the multi way selection. Only one variable is accessed at a particular time based on the specified condition. Default case in switch statement is used to trap unspecified cases.
+
+```
+enum Climate {
+   case India
+   case America
+   case Africa
+   case Australia
+}
+
+var season = Climate.America
+season = .America
+switch season {
+   case .India:
+      print("Climate is Hot")
+   case .America:
+      print("Climate is Cold")
+   case .Africa:
+      print("Climate is Moderate")
+   case .Australia:
+      print("Climate is Rainy")
+   
+}
+```
+
+When we run the above program using playground, we get the following result −
+
+```
+Climate is Cold
+```
+
+The program first defines Climate as the enumeration name. Then its members like 'India', 'America', 'Africa' and 'Australia' are declared belonging to class 'Climate'. Now the member America is assigned to a Season Variable. Further, Switch case will see the values corresponding to .America and it will branch to that particular statement. The output will be displayed as "Climate is Cold". Likewise all the members can be accessed through switch statements. When the condition is not satisfied it prints by default 'Climate is not predictable'.
+
+Enumeration can be further classified in to associated values and raw values.
+
+### Difference between Associated Values and Raw Values
+
+|                 Associated Values                |        Raw Values        |
+|:------------------------------------------------:|:------------------------:|
+|                Different Datatypes               |      Same Datatypes      |
+|             Ex: enum {10,0.8,"Hello"}            |    Ex: enum {10,35,50}   |
+| Values are created based on constant or variable |    Prepopulated Values   |
+|          Varies when declared each time          | Value for member is same |
+
+### Enum with Associated Values
+
+```
+enum Student {
+   case Name(String)
+   case Mark(Int,Int,Int)
+}
+
+var studDetails = Student.Name("Swift 4")
+var studMarks = Student.Mark(98,97,95)
+
+switch studMarks {
+   case .Name(let studName):
+      print("Student name is: \(studName).")
+   case .Mark(let Mark1, let Mark2, let Mark3):
+      print("Student Marks are: \(Mark1),\(Mark2),\(Mark3).")
+}
+```
+
+When we run the above program using playground, we get the following result −
+
+```
+Student Marks are: 98,97,95.
+```
+
+Consider for example to access the students name and marks secured in three subjects enumeration name is declared as student and the members present in enum class are name which belongs to string datatype, marks are represented as mark1, mark2 and mark3 of datatype Integer. To access either the student name or marks they have scored
+
+```
+var studDetails = Student.Name("Swift")
+var studMarks = Student.Mark(98,97,95)
+```
+
+Now, the switch case will print student name if that case block is executed otherwise it will print the marks secured by the student. If both the conditions fail, the default block will be executed.
+
+### Enum with Raw Values
+
+Raw values can be strings, characters, or any of the integer or floating-point number types. Each raw value must be unique within its enumeration declaration. When integers are used for raw values, they auto-increment if no value is specified for some of the enumeration members.
+
+```
+enum Month: Int {
+   case January = 1, February, March, April, May, June, July, August,
+      September, October, November, December
+}
+
+let yearMonth = Month.May.rawValue
+print("Value of the Month is: \(yearMonth).")
+```
+
+When we run the above program using playground, we get the following result −
+
+```
+Value of the Month is: 5.
 ```
 
