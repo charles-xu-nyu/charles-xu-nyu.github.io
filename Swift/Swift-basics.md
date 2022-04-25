@@ -13,6 +13,7 @@ description: This section helps you with getting started with Swift.
 4. [Strings](#strings)
 5. [Arrays](#arrays)
 6. [Dictionaries](#dictionaries)
+7. [Functions](#functions)
 
 ## Introduction
 
@@ -865,3 +866,20 @@ someDict1 = false
 someDict2 = false
 someDict3 = true
 ```
+
+## Functions
+
+A function is a set of statements organized together to perform a specific task. A Swift function can be as simple as a simple C function to as complex as an Objective C language function. It allows us to pass local and global parameter values inside the function calls.
+
+[ ]Function Declaration − tells the compiler about a function's name, return type, and parameters.
+
+[ ]Function Definition − It provides the actual body of the function.
+
+Swift 4 functions contain parameter type and its return types.
+
+Function Definition
+In Swift 4, a function is defined by the "func" keyword. When a function is newly defined, it may take one or several values as input 'parameters' to the function and it will process the functions in the main body and pass back the values to the functions as output 'return types'.
+
+Every function has a function name, which describes the task that the function performs. To use a function, you "call" that function with its name and pass input values (known as arguments) that match the types of the function's parameters. Function parameters are also called as 'tuples'.
+
+A function's arguments must always be provided in the same order as the function's parameter list and the return values are followed by →.
