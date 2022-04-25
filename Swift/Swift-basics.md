@@ -887,6 +887,8 @@ Every function has a function name, which describes the task that the function p
 
 A function's arguments must always be provided in the same order as the function's parameter list and the return values are followed by →.
 
+### Syntax
+
 ```
 func funcname(Parameters) -> returntype {
    Statement1
@@ -1305,6 +1307,8 @@ Enumeration in Swift also resembles the structure of C and Objective C.
 - It is declared in a class and its values are accessed through the instance of that class.
 - Initial member value is defined using enum intializers.
 - Its functionality is also extended by ensuring standard protocol functionality.
+
+### syntax
 
 Enumerations are introduced with the enum keyword and place their entire definition within a pair of braces −
 
