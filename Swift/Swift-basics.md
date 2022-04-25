@@ -1308,7 +1308,7 @@ Enumeration in Swift also resembles the structure of C and Objective C.
 - Initial member value is defined using enum intializers.
 - Its functionality is also extended by ensuring standard protocol functionality.
 
-### syntax
+### Syntax
 
 Enumerations are introduced with the enum keyword and place their entire definition within a pair of braces −
 
