@@ -845,3 +845,23 @@ Total items in someDict1 = 3
 Total items in someDict2 = 2
 ```
 
+### The empty Property
+You can use read-only **empty** property of a dictionary to find out whether a dictionary is empty or not, as shown below −
+
+```
+var someDict1:[Int:String] = [1:"One", 2:"Two", 3:"Three"]
+var someDict2:[Int:String] = [4:"Four", 5:"Five"]
+var someDict3:[Int:String] = [Int:String]()
+
+print("someDict1 = \(someDict1.isEmpty)")
+print("someDict2 = \(someDict2.isEmpty)")
+print("someDict3 = \(someDict3.isEmpty)")
+```
+
+When the above code is compiled and executed, it produces the following result −
+
+```
+someDict1 = false
+someDict2 = false
+someDict3 = true
+```
