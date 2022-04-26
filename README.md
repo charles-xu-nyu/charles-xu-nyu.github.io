@@ -36,7 +36,7 @@ Following are the list of demos available in this repository. Each demo has a re
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | [`Text Edit Demo`](./Ios_demos/text_editor/README.md)        | Simple app with text view and edit text                                                                                               |
 | [`Fibonacci series app 1`](./Ios_demos/Fib_text_view/README.md) | This app demonstrates how to display fixed length Fibonacci series generated on the app screen                                        |
-| `Fibonacci series app 2` | This app demonstrates how to take length of Fibonacci series as user input in app using UI and display the generated Fibonacci series |
+| [`Fibonacci series app 2`](./Ios_demos/fib_edit_text/README.md) | This app demonstrates how to take length of Fibonacci series as user input in app using UI and display the generated Fibonacci series |
 | `Text Image Demo`        | Simple app with text view and image view                                                                                              |
 | `Slider Demo`            | App to demonstrate use of slider                                                                                                      |
 | `Sine Wave Demo 1`       | App to demonstrate generating sine wave with fixed frequency                                                                          |
