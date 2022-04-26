@@ -65,4 +65,4 @@ struct TextEditdemoView_Previews: PreviewProvider {
 
 Following are few screenshots of this demo.
 
-![1](../../../images/screenshots/text_editor_1.png)
+![1](../images/screenshots/text_editor_1.png)
