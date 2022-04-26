@@ -34,7 +34,7 @@ Following are the list of demos available in this repository. Each demo has a re
 
 | Demo Name              | Description                                                                                                                           |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `Text Edit Demo`         | Simple app with text view and edit text                                                                                               |
+| [`Text Edit Demo`](./Ios_demos)        | Simple app with text view and edit text                                                                                               |
 | `Fibonacci series app 1` | This app demonstrates how to display fixed length Fibonacci series generated on the app screen                                        |
 | `Fibonacci series app 2` | This app demonstrates how to take length of Fibonacci series as user input in app using UI and display the generated Fibonacci series |
 | `Text Image Demo`        | Simple app with text view and image view                                                                                              |
