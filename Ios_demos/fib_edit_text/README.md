@@ -87,3 +87,16 @@ In the following demos, all the ".h" will be the same except the project name, s
 
 ## Screenshots
 
+Following are few screenshots of this demo.
+
+**First screenshot is the interface of the demo.**
+
+![1](../../images/screenshots/fib_edit_text_1.png)
+
+**Second screenshot is result of this demo when N=15.**
+
+![2](../../images/screenshots/fib_edit_text_2.png)
+
+**Third screenshot is result of this demo when N=50.**
+
+![3](../../images/screenshots/fib_edit_text_3.png)
