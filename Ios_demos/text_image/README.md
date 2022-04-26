@@ -62,3 +62,9 @@ struct textimageView_Previews: PreviewProvider {
     }
 }
 ```
+
+## Screenshot
+
+Following is the interface screenshot of this demo.
+
+![3](../../images/screenshots/text_image.png)
