@@ -65,14 +65,14 @@ struct TextEditdemoView_Previews: PreviewProvider {
 
 Following are few screenshots of this demo.
 
-First screenshot is text edition demo of the app.
+**First screenshot is text edition demo of the app.**
 
 ![1](../../images/screenshots/text_editor_1.png)
 
-Second screenshot is type in some character in grey box.
+**Second screenshot is type in some character in grey box.**
 
 ![2](../../images/screenshots/text_editor_2.png)
 
-Third screenshot is result of this demo.
+**Third screenshot is result of this demo.**
 
 ![3](../../images/screenshots/text_editor_3.png)
