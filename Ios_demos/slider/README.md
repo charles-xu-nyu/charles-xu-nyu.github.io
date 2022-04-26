@@ -31,4 +31,6 @@ This Demo introduces new widget called Slider. The Slider is nothing but a horiz
 
 Following are few screenshots of this demo.
 
-![1]()
+![1](../../images/screenshots/slider_1.png)
+
+![2](../../images/screenshots/slider_2.png)
