@@ -72,3 +72,4 @@ struct Fibonacciseries1_Previews: PreviewProvider {
 
 ## Screenshots
 
+![1](../../images/screenshots/fib_text_view_1.png)
