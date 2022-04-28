@@ -106,3 +106,8 @@ OSStatus t1PlayCallBack(    void *                            inRefCon,
 
 @end
 ```
+
+## Screenshot
+
+Following are the screenshots of this demo’s interface.
+
