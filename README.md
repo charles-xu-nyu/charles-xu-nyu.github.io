@@ -29,6 +29,8 @@ You must be able to see the `Swift` or `Objective-C` codes in the empty project.
 
 Now you can make changes to the default empty project by writing your own code or using the code of demo apps provided below.
 
+Also, I have already zipped and uploaded my Xcode Project in my [Github](./xcode_project/README.md), you could follow the instruction and deirectly download to your PC and experience these apps.
+
 Following are the list of demos available in this repository. Each demo has a readme and well commented code.
 (Click on the links of each demo name for README)
 
