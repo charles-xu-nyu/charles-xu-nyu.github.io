@@ -4,7 +4,7 @@ This is a simple demo of sine wave generation. Sine wave generation is very simi
 
 There are two buttons defined in the layout. Start button is used to `Start` synthesizing and playing the sine wave generated and `Stop` button is used to stop the synthesis and playing the sine wave to the speaker.
 
-# Code
+## Code
 
 ```
 #import "SineWaveDemo1UIViewController.h"
