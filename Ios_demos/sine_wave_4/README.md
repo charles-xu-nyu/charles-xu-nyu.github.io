@@ -118,3 +118,6 @@ OSStatus t2PlayCallBack(    void *                            inRefCon,
 
 Following are the screenshots of this demo’s interface.
 
+![1](../../images/screenshots/sine_wave_4_1.png)
+
+![2](../../images/screenshots/sine_wave_4_2.png)
