@@ -24,6 +24,10 @@ I will upload three zip file.
 
 File 1 contains three demos, they are `Text Edit Demo`, `Fibonacci series app 1` and `Text Image Demo`.
 
-In the left part, you can click on each demo's name to access the demo.
+In the left part of the project, you can click on each demo's name to access the demo.
 
 ![4](../images/file_1_1.png)
+
+In the right part of the project, you can see brief introdction of ios and this app.
+
+![5](../images/file_1_2.png)
