@@ -43,4 +43,4 @@ Following are the list of demos available in this repository. Each demo has a re
 | [`Sine Wave Demo 2`](./Ios_demos/sine_wave_2/README.md)       | App to demonstrate generating sine wave with variable frequency (uses buttons)                                                        |
 | [`Sine Wave Demo 3`](./Ios_demos/sine_wave_3/README.md)       | App to demonstrate generating sine wave with variable frequency (uses Slider)                                                         |
 | [`Sine Wave Demo 4`](./Ios_demos/sine_wave_4/README.md)       | App to demonstrate generating sine wave with variable frequency and gain (uses Slider)                                                |
-| `Piano Simulator`                  | A fun app. A piano simulator.                                                                                                          |
+| [`Piano Simulator`](./Ios_demos/piano_simulator/README.md)                   | A fun app. A piano simulator.                                                                                                          |
