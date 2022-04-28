@@ -4,3 +4,6 @@ Under this folder is my Xcode project file. You could just download and open it 
 
 In order to open a exist project, you need to unzip the zip file, and open your Xcode and choose open a project or file.
 
+![1](../images/welcome-to-xcode.png)
+
+When you click this, then choose the file with the suffix `.xcodeproj`.
