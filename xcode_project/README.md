@@ -35,3 +35,10 @@ In the right part of the project, you can see brief introdction of ios and this 
 ## File 2 instruction
 
 File 2 contains six demos, they are `Fibonacci series app 2`, `Slider Demo`, `Sine Wave Demo 1`, `Sine Wave Demo 2`, `Sine Wave Demo 3`, and `Sine Wave Demo 4`. You can click on each demo's name to access the demo.
+
+![6](../images/file_2.png)
+
+## File 3 instruction
+
+File 3 just contents 1 demo, which is the `Piano Simulator`, you could just press the keyboard to experience and listen to different Syllables of the piano.
+
