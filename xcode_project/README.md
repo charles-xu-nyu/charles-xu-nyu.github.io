@@ -26,4 +26,4 @@ File 1 contains three demos, they are `Text Edit Demo`, `Fibonacci series app 1`
 
 In the left part, you can click on each demo's name to access the demo.
 
-[1](../images/file_1_1.png)
+[1](../../images/file_1_1.png)
