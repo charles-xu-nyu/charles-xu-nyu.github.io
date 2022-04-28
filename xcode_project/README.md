@@ -31,3 +31,7 @@ In the left part of the project, you can click on each demo's name to access the
 In the right part of the project, you can see brief introdction of ios and this app.
 
 ![5](../images/file_1_2.png)
+
+## File 2 instruction
+
+File 2 contains six demos, they are `Fibonacci series app 2`, `Slider Demo`, `Sine Wave Demo 1`, `Sine Wave Demo 2`, `Sine Wave Demo 3`, and `Sine Wave Demo 4`. You can click on each demo's name to access the demo.
