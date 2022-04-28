@@ -1,6 +1,6 @@
 # Xcode Project
 
-All the code could be found in my Github, feel free to download and run on your own PC.
+All the code could be found in my [Github](https://github.com/charles-xu-nyu/charles-xu-nyu.github.io/tree/main/xcode_project), feel free to download and run on your own PC.
 
 ## Open a existing project
 
