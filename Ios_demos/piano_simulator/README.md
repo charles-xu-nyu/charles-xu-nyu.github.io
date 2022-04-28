@@ -131,3 +131,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 Following is the screenshot of this demo’s interface.
 
+![1](../../images/screenshots/piano_simulator.png)
