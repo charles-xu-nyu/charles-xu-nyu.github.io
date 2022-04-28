@@ -6,6 +6,8 @@ description: This section helps you with getting started with Swift.
 
 # [Swift](https://developer.apple.com/swift/) Basics
 
+All the code could be found in my [Github](), feel free to download and run on your own PC.
+
 ## Contents
 1. [Introduction](#introduction)
 2. [Environment](#environment)
