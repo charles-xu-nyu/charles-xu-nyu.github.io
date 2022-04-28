@@ -2,7 +2,7 @@
 
 This is a simple demo of sine wave generation. Sine wave generation is very similar to that used in the Lab. This demo makes use of AudioToolbox, we need to define the stream then call back the stream so that we could hear the sound.
 
-There are two buttons defined in the layout. Start button is used to start synthesizing and playing the sine wave generated and Stop button is used to stop the synthesis and playing the sine wave to the speaker.
+There are two buttons defined in the layout. Start button is used to `Start` synthesizing and playing the sine wave generated and `Stop` button is used to stop the synthesis and playing the sine wave to the speaker.
 
 # Code
 
