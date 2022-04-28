@@ -43,4 +43,4 @@ File 2 contains six demos, they are `Fibonacci series app 2`, `Slider Demo`, `Si
 File 3 just contents 1 demo, which is the `Piano Simulator`, you could just press the keyboard to experience and listen to different Syllables of the piano.
 
 
-![7](../../images/screenshots/piano_simulator.png)
+![7](../images/screenshots/piano_simulator.png)
