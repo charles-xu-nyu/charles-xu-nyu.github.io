@@ -1,6 +1,6 @@
 # Sine Wave Demo 2 
 
-This demo is very similar to the Sine Wave Demo - 1, the only difference in this demo is that we are able to control the frequency of the sine wave generated using two buttons. Up button is used to increase the frequency by 10 Hz and the down button is used to decrease the frequency by 10 Hz.
+This demo is very similar to the `Sine Wave Demo - 1`, the only difference in this demo is that we are able to control the frequency of the sine wave generated using two buttons. Up button is used to increase the frequency by 10 Hz and the down button is used to decrease the frequency by 10 Hz.
 
 ## Code
 
