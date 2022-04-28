@@ -1,5 +1,7 @@
 # Xcode Project
 
+All the code could be found in my Github, feel free to download and run on your own PC.
+
 ## Open a existing project
 
 Under this folder is my Xcode project file. You could just download and open it from the Xcode in your PC.
