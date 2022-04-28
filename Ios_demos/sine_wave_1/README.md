@@ -131,3 +131,4 @@ OSStatus PlayCallBack(    void *                            inRefCon,
 
 Following is the screenshot of this demo's interface.
 
+![1](../../images/screenshots/sine_wave_1.png)
